@@ -1,0 +1,8 @@
+.accordion__content{
+    height: 0px;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+.accordion__block--active .accordion__content{
+    height:30px;
+}

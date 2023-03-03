@@ -1,0 +1,28 @@
+.header__nav{
+    position: sticky;
+    top: 0;
+    background-color: rgb(74, 174, 255);
+    z-index: 2;
+    padding: 20px 40px;
+    width: 100%;
+}
+.nav__ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    column-gap: 60px;
+    @include mobile{
+        column-gap: 10px;
+    }
+}
+.nav__a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 10px;
+    border-radius: 15;
+}
+.nav__a:hover {
+    background-color: rgb(223, 223, 223);
+}

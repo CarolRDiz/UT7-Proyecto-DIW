@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Videojuegos 2D</title>
+  <link rel="stylesheet" href="./assets/sass/main.scss">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a name="inicio"></a>
+    <img src="./assets/img/logo_transparente.png" alt="logo" class="header__logo">
+    <audio id="bike" preload="auto">
+      <source src="./assets/audio/mixkit-bike-bell-ring-595.ogg">
+      <source src="./assets/audio/mixkit-bike-bell-ring-595.wav">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+  </header>
+  <nav class="header__nav">
+    <ul class="nav__ul">
+      <li class="nav__li"><a href="#personajes" class="nav__a">Personajes</a></li>
+      <li class="nav__li"><a href="#escenarios" class="nav__a">Escenarios</a></li>
+      <li class="nav__li"><a href="#videos" class="nav__a">Vídeos</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="main__title">
+      <h1>Biking Cádiz</h1>
+      <p class="title__p">En Biking Cádiz eres una estudiante que debe llegar al instituto esquivando a sus distraídos
+        compañeros de clase con su
+        bicicleta, recorriendo un paisaje ambientado en la ciudad de Cádiz.</p>
+    </section>
+
+    <section id="personajes" class="main__character-tabs">
+      <!-- <a name="personajes"></a> -->
+      <h2>Personajes</h2>
+      <ul class="character-tabs__ul">
+        <li class="character-tabs__li character-tabs__li--active">
+          <img id="img_lorena" class="character__img character__img--active" src="./assets/img/character_lorena.png" alt="Personaje Lorena">
+        </li>
+        <li class="character-tabs__li">
+          <img class="character__img" src="./assets/img/character_simon.png" alt="Personaje Simón">
+        </li>
+        <li class="character-tabs__li">
+          <img class="character__img" src="./assets/img/character_jose.png" alt="Personaje José Antonio">
+        </li>
+        <li class="character-tabs__li">
+          <img class="character__img" src="./assets/img/character_carol.png" alt="Personaje Carolina">
+        </li>
+      </ul>
+      <div class="character-tabs__descriptions">
+        <article class="character-tabs__block character-tabs__block--active">
+          <h3>Lorena</h3>
+          <p>Lo más difícil de este curso es llegar a clase. Parece que el carril bici existe para decorar las aceras
+            con una bonita franja verde, y quienes la usan pasan por muchos obstáculos. Lorena no se da por vencida y no
+            cederá ante los peatones, no irá a clase en bus porque le sienta bien un poco de actividad física.</p>
+        </article>
+        <article class="character-tabs__block">
+          <h3>Simón</h3>
+          <p>Es el compañero pesado de la clase. Si no lo esquivas te retrasará con su cháchara. Ya hablaréis en clase.
+          </p>
+        </article>
+        <article class="character-tabs__block">
+          <h3>José</h3>
+          <p>Tu compañero José está muy fuerte. Si te chocas con él es probable que se destroze tu bicicleta, pero es
+            simpático y lo lamentará mucho.</p>
+        </article>
+        <article class="character-tabs__block">
+          <h3>Carolina</h3>
+          <p>Si no la esquivas no te retrasará en absoluto, pero en tu conciencia quedará haberla aplastado y, además,
+            te ayuda con las tareas.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- <section class="main__accordion">
+      <article class="accordion__block">
+        <h2 class="accordion__h2">Titular</h2>
+        <p class="accordion__content">Contenido</p>
+      </article>
+      <article class="accordion__block">
+        <h2 class="accordion__h2">Titular</h2>
+        <p class="accordion__content">Contenido</p>
+      </article>
+    </section> -->
+
+    <section id="escenarios" class="main__gallery">
+      <!-- <a name="escenarios"></a> -->
+      <h2>Escenarios</h2>
+      <ul class="gallery__ul">
+        <li class="gallery__li"><a href="#" class="gallery__a">
+            <img src="./assets/img/sights/Catedral_escenario_sin_personaje.png" alt="Escenario Catedral" class="gallery__img"
+              loading="lazy"></a>
+        </li>
+        <li class="gallery__li"><a href="#" class="gallery__a">
+            <img src="./assets/img/sights/escenario_carolina.jpeg" alt="Escenario Teatro" class="gallery__img" loading="lazy"></a>
+        </li>
+        <li class="gallery__li"><a href="#" class="gallery__a">
+            <img src="./assets/img/sights/paisaje_lorena.png" alt="Escenario Instituto" class="gallery__img" loading="lazy"></a>
+        </li>
+        <li class="gallery__li"><a href="#" class="gallery__a">
+            <img src="./assets/img/sights/paisaje_simon.png" alt="Escenario Monumento" class="gallery__img" loading="lazy"></a>
+        </li>
+      </ul>
+
+      <div class="gallery__lightbox">
+        <button class="lightbox__button">Cerrar</button>
+        <img src="./assets/img/sights/Catedral_escenario_sin_personaje.png" alt="" class="lightbox__large-img"
+          loading="lazy">
+      </div>
+    </section>
+
+    <!-- <section class="main__carrousel">
+      <div class="carrousel__large">
+        <img src="./assets/img/sights/paisaje_simon.png" alt="Imagen 2" class="carrousel__img">
+        <img src="./assets/img/sights/escenario_carolina.jpeg" alt="Imagen 2" class="carrousel__img">
+        <img src="./assets/img/sights/Catedral_escenario_sin_personaje.png" alt="Imagen 1" class="carrousel__img">
+        <img src="./assets/img/sights/paisaje_lorena.png" alt="Imagen 2" class="carrousel__img">
+      </div>
+      <ul class="carrousel__points">
+        <li class="carrousel__point carrousel__point--active"></li>
+        <li class="carrousel__point"></li>
+        <li class="carrousel__point"></li>
+        <li class="carrousel__point"></li>
+      </ul>
+    </section> -->
+    <section id="videos" class="main__videos">
+      <!-- <a name="videos"></a> -->
+      <h2>Videos</h2>
+      <video class="video" controls>
+        <source src="./assets/videos/walking_man.mp4" type="video/mp4" />
+        <source src="./assets/videos/walking_man.webm" type="video/webm" />
+        Su navegador no soporta contenido multimedia
+      </video>
+    </section>
+  </main>
+  <footer>
+    <a href="#inicio"><img src="./assets/img/logo_mandarina.png" alt="logo" class="footer__logo"></a>
+    <ul class="footer__ul">
+      <li class="footer__li"><a href="#personajes" class="footer__a">Personajes</a></li>
+      <li class="footer__li"><a href="#escenarios" class="footer__a">Escenarios</a></li>
+      <li class="footer__li"><a href="#videos" class="footer__a">Vídeos</a></li>
+    </ul>
+  </footer>
+</body>
+<script src="./assets/js/app.js"></script>
+
+</html>

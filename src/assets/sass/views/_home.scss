@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(74, 174, 255);
+    padding: 0 15%;
+
+    @include tablet{
+        padding: 0 5%;
+    }
+    @include mobile{
+        padding: 0 0%;
+    }
+}
+main{
+    background-color: white;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+    @include mobile{
+        padding: 40px 10px;
+    }
+}
+.main__h1{
+    /*font-family: 'Luckiest Guy', cursive;*/
+    font-size: 60px;
+}
+.video{
+    max-width: 900px;
+    width: 100%;
+}
+.main__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+.title__p{
+    width:60%;
+    text-align: justify;
+    @include tablet{
+        width:80%;
+    }
+    @include mobile{
+        width:90%;
+    }
+}
+
+.main__videos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}

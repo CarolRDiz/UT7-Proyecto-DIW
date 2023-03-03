@@ -1,0 +1,67 @@
+.main__character-tabs {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+.character-tabs__ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    @include mobile{
+        flex-wrap: wrap;
+    }
+}
+.character-tabs__li {
+    padding: 10px;
+    transition: all .5s ease;
+}
+.character-tabs__li--active{
+}
+.character-tabs__descriptions{
+    position: relative;
+    min-height: 200px;
+    width: 70%;
+    @include tablet{
+        width:90%;
+    }
+
+    @include mobile{
+        width:90%;
+        min-height: 270px;
+    }
+}
+.character-tabs__block{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.character-tabs__block--active{
+    opacity: 1;
+}
+.character__img{
+    width: 100%;
+    max-width: 300px;
+    filter: brightness(0%);
+    cursor:pointer;
+    @include mobile{
+        max-width: 100px;
+    }
+    
+}
+#img_lorena{
+    height:100%;
+}
+.character__img:hover{
+    transition: all .3s ease;
+    filter: brightness(30%);
+}
+.character__img--active{
+    filter: brightness(100%);
+}
+.character__img--active:hover{
+    filter: brightness(100%);
+}

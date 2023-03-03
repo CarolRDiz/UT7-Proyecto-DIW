@@ -1,0 +1,26 @@
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 70px;
+         column-gap: 70px;
+    padding: 0 30px;
+}
+.footer__logo{
+    max-width: 200px;
+    width: 100%;
+}
+.footer__ul{
+    display: flex;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    @include mobile{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+.footer__a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,16 @@
+header{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+    transition: all .5s ease;
+    max-width: 400px;
+    width: 100%;
+}
+.header__logo:hover{
+    transition: all .5s ease;
+    transform: scale(1.2);
+}
